@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style/style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/@sakun/system.css" />
+    <title>Home</title>
+  </head>
+  <body>
+    <div class="navbar">
+      <img class="logo" src="assets/logo/durian.png" alt="" />
+      <ul role="menu-bar">
+        <li role="menu-item" tabindex="0" aria-haspopup="true">
+          File
+          <ul role="menu">
+            <li role="menu-item"><a href="/">Home</a></li>
+          </ul>
+        </li>
+        <li role="menu-item" tabindex="0" aria-haspopup="true">
+          Edit
+          <ul role="menu">
+            <li role="menu-item"><a href="/snake">Snake.app</a></li>
+            <li role="menu-item" class="divider"></li>
+            <li role="menu-item">
+              <a
+                href="https://sakun.co"
+                target="_blank"
+                rel="noopener noreferrer"
+                >sakun's projects</a
+              >
+            </li>
+            <li role="menu-item">
+              <a
+                href="https://cipherrave.github.io"
+                target="_blank"
+                rel="noopener noreferrer"
+                >cipherrave's projects</a
+              >
+            </li>
+          </ul>
+        </li>
+        <li role="menu-item" tabindex="0" aria-haspopup="true">
+          Help
+          <ul role="menu">
+            <li role="menu-item"><a href="/about">About</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+
+    <div class="window">
+      <div class="title-bar">
+        <button aria-label="Close" class="close"></button>
+        <h1 class="title">Welcome</h1>
+        <button aria-label="Resize" class="resize"></button>
+      </div>
+      <div class="separator"></div>
+
+      <div id="welcomewindow" class="window-pane">
+        <img id="nyangif" src="assets/pics/nyan.gif" alt="" />
+        <h1>Hello Every-nyan!</h1>
+        <p>
+          This page is made for Node.js assignment numero uno as part of
+          ADNEXIO's Software Engineer Conversion Course :3
+        </p>
+        <br />
+        <p>Have a nyan-derful day x3</p>
+      </div>
+    </div>
+
+    <div class="window" style="max-width: 300px">
+      <div class="title-bar">
+        <button aria-label="Close" class="close"></button>
+        <h1 class="title">Search</h1>
+        <button aria-label="Resize" disabled class="hidden"></button>
+      </div>
+      <div class="separator"></div>
+
+      <div class="modeless-dialog">
+        <section
+          class="field-row"
+          style="justify-content: flex-start; padding: 20px"
+        >
+          <label for="text_find" class="modeless-text">Find:</label>
+          <input
+            id="text_find"
+            type="text"
+            style="width: 100%"
+            placeholder=""
+          />
+        </section>
+        <section
+          class="field-row"
+          style="justify-content: flex-end; padding: 20px"
+        >
+          <button class="btn" onClick="window.location.reload();">
+            Cancel
+          </button>
+          <button
+            class="btn"
+            style="width: 95px"
+            onclick="window.location.href='/submit'"
+          >
+            Find
+          </button>
+        </section>
+      </div>
+    </div>
+  </body>
+</html>

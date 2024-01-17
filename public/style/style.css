@@ -1,0 +1,52 @@
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+  margin: 1pc;
+}
+
+.logo {
+  width: 20px;
+  height: 20px;
+}
+
+#welcomewindow {
+  display: flex;
+  flex-direction: column;
+  resize: vertical;
+}
+
+#nyangif {
+  width: 100px;
+}
+
+#aboutwindow {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  flex-wrap: wrap;
+  resize: vertical;
+  gap: 40px;
+  padding: 20px;
+}
+
+#durianlogoabout {
+  width: 150px;
+}
+
+#errorwindow {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+}
+
+#errorlogo {
+  width: 150px;
+}

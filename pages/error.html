@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style/style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/@sakun/system.css" />
+    <title>About</title>
+  </head>
+  <body>
+    <div class="navbar">
+      <img class="logo" src="assets/logo/durian.png" alt="" />
+      <ul role="menu-bar">
+        <li role="menu-item" tabindex="0" aria-haspopup="true">
+          File
+          <ul role="menu">
+            <li role="menu-item"><a href="/">Home</a></li>
+          </ul>
+        </li>
+        <li role="menu-item" tabindex="0" aria-haspopup="true">
+          Edit
+          <ul role="menu">
+            <li role="menu-item"><a href="/snake">Snake.app</a></li>
+            <li role="menu-item" class="divider"></li>
+            <li role="menu-item">
+              <a
+                href="https://sakun.co"
+                target="_blank"
+                rel="noopener noreferrer"
+                >sakun's projects</a
+              >
+            </li>
+            <li role="menu-item">
+              <a
+                href="https://cipherrave.github.io"
+                target="_blank"
+                rel="noopener noreferrer"
+                >cipherrave's projects</a
+              >
+            </li>
+          </ul>
+        </li>
+        <li role="menu-item" tabindex="0" aria-haspopup="true">
+          Help
+          <ul role="menu">
+            <li role="menu-item"><a href="/about">About</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+
+    <div class="window">
+      <div class="title-bar">
+        <button aria-label="Close" class="close"></button>
+        <h1 class="title">Error</h1>
+        <button aria-label="Resize" disabled class="hidden"></button>
+      </div>
+      <div class="separator"></div>
+
+      <div id="errorwindow" class="modeless-dialog">
+        <img id="errorlogo"src="assets/logo/bomb.jpg" alt="">
+        <h1>Sorry, a system error occured.</h1>
+      </div>
+        <section class="field-row" style="justify-content: flex-end; padding: 20px;">
+          <button class="btn" onclick="history.back()">Restart</button>
+          <button class="btn" style="width: 95px" onclick="window.location.href='/'">Home</button>
+        </section>
+      </div>
+    </div>
+  </body>
+</html>
